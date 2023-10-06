@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body style="background-image: url(bg.gif); background-repeat: no-repeat; background-size: cover; height: 100vh; display: flex; justify-content: center; align-items: center; color: white;" >
+
+  <section class="container mx-auto ">
+    <div  id="form" class="w-full px-5 ">
+        <h1 class="text-3xl font-bold py-5 text-center">
+            Find Love % Between
+          </h1>
+          <div class="flex justify-around text-center gap-x-3">
+            <div class="w-[50%]"> 
+                <input type="text" name="Your Name" id="yourname" placeholder="Enter your Name: " class="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:p-2 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            </div>
+            <div class="w-[50%]">
+                <input type="text" name="Partner Name" id="partnername" placeholder="Enter your Partner Name : " class="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:p-2 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            </div>
+          </div>
+          <div class="flex justify-between my-4">
+            <button onclick="calulate()" class=" mx-auto py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">
+                Calulate Love
+              </button>
+          </div>
+    </div>
+    <section id="cal" class=" py-14 space-y-6 hidden">
+        <h3 class="text-center  text-3xl">Percentage of love between</h3>
+        <section class="name flex justify-center space-x-6  py-5">
+            <h1 id="myname" class="text-3xl font-bold">Jansher</h1>
+            <span id="and" class="text-3xl font-bold"> & </span>
+            <h1 id="partner" class="text-3xl font-bold">Sazin</h1>
+        </section>  
+        <h1 id="per" class="text-center text-5xl  "> %</h1>
+        <div class="flex justify-between my-4">
+            <button onclick="Again()" class=" mx-auto py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">
+                Calulate Love Again
+              </button>
+          </div>
+    </section>
+    
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
